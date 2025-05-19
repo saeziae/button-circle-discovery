@@ -135,10 +135,10 @@ def visualize(relations):
     pos = nx.kamada_kawai_layout(layout_graph)
 
     # Add jittering to avoid node overlap
-    for node in pos:
-        jitter_x = random.uniform(-0.02, 0.02)
-        jitter_y = random.uniform(-0.02, 0.02)
-        pos[node] = (pos[node][0] + jitter_x, pos[node][1] + jitter_y)
+    #for node in pos:
+    #    jitter_x = random.uniform(-0.02, 0.02)
+    #    jitter_y = random.uniform(-0.02, 0.02)
+    #    pos[node] = (pos[node][0] + jitter_x, pos[node][1] + jitter_y)
 
     # Scale up the layout for better spacing
     for node in pos:
